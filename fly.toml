@@ -1,0 +1,16 @@
+# "app" нэрийг өөрийнхөөрөө солих (fly launch өөрөө үүсгэвэл түүнийг ашигла)
+app = "my-discord-log-bot"
+primary_region = "sin"
+
+[build]
+
+[env]
+  DATA_DIR = "/data"
+
+[mounts]
+  source = "data"
+  destination = "/data"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
